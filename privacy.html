@@ -17,13 +17,21 @@
         h1 span { color: #ff6b35; }
         .updated { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
         h2 { color: #e0e0e0; font-size: 1.3rem; margin: 32px 0 12px; }
+        h3 { color: #bbb; font-size: 1.1rem; margin: 20px 0 8px; }
         p { margin-bottom: 16px; }
-        ul { margin: 0 0 16px 24px; }
+        ul, ol { margin: 0 0 16px 24px; }
         li { margin-bottom: 8px; }
         a { color: #ff6b35; text-decoration: none; }
         a:hover { text-decoration: underline; }
         .back { display: inline-block; margin-bottom: 30px; color: #888; font-size: 0.9rem; }
         .back:hover { color: #ff6b35; text-decoration: none; }
+        .note {
+            background: rgba(255,107,53,0.06);
+            border-left: 4px solid #ff6b35;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+        }
     </style>
 </head>
 <body>
@@ -33,61 +41,110 @@
         <p class="updated">Last updated: September 12, 2026</p>
 
         <h2>1. Introduction</h2>
-        <p>This Privacy Policy describes how Muhamad Jalal ("we", "us", or "our") collects, uses, and shares information when you use the Nova Rush mobile application ("the App").</p>
+        <p>This Privacy Policy describes how Nova Rush ("we", "our", or "us") collects, uses, and shares information about you when you use our mobile game application ("the App"). By using the App, you agree to the collection and use of information in accordance with this policy.</p>
 
         <h2>2. Information We Collect</h2>
-        <p>We collect the following types of information:</p>
+
+        <h3>2.1 Information You Provide</h3>
         <ul>
-            <li><strong>Account Information:</strong> When you sign in via Google or Facebook, we receive your name, email address, and profile photo from the authentication provider.</li>
-            <li><strong>Game Data:</strong> Game progress, achievements, scores, and in-game purchases are stored locally on your device and optionally synced to the cloud.</li>
-            <li><strong>Device Information:</strong> Device model, operating system version, and unique device identifiers for analytics and crash reporting.</li>
-            <li><strong>Usage Data:</strong> Analytics data such as features used, session duration, and interaction patterns to improve the App.</li>
+            <li><strong>Account information</strong> (display name, email, profile photo) if you sign in with Google or Facebook</li>
+            <li>An <strong>anonymous account identifier</strong> is created automatically when you start playing</li>
+            <li><strong>Game progress</strong>, scores, achievements, settings, guild membership, and daily reward state</li>
+            <li><strong>Communications</strong> with other players via guild chat and social features</li>
         </ul>
 
-        <h2>3. How We Use Your Information</h2>
-        <p>We use the collected information to:</p>
+        <h3>2.2 Information Collected Automatically</h3>
         <ul>
-            <li>Provide and maintain the App's features</li>
-            <li>Save your game progress and sync across devices</li>
-            <li>Improve the App and develop new features</li>
-            <li>Respond to your support requests</li>
-            <li>Detect and prevent fraud or abuse</li>
+            <li>Device model, operating system version, and a device identifier (a randomly generated ID used to keep your local progress)</li>
+            <li>App usage data and gameplay statistics</li>
+            <li>Crash reports and performance data</li>
+            <li>Advertising ID (for ads served to players aged 13 and older)</li>
+            <li>Push notification tokens (for optional notifications)</li>
         </ul>
 
-        <h2>4. Third-Party Services</h2>
-        <p>The App uses the following third-party services that may collect information:</p>
+        <h3>2.3 Third-Party Services</h3>
+        <p>We use the following third-party services that may collect information:</p>
         <ul>
-            <li><strong>Firebase (Google):</strong> Authentication, analytics, crash reporting, and cloud storage</li>
-            <li><strong>Google Sign-In:</strong> Account authentication</li>
-            <li><strong>Facebook Login:</strong> Account authentication</li>
-            <li><strong>Google AdMob:</strong> Advertising and ad performance measurement</li>
-            <li><strong>Google Play Services:</strong> Play Integrity and app services</li>
+            <li><strong>Firebase Authentication</strong> &mdash; account creation and sign-in (anonymous, Google, and Facebook)</li>
+            <li><strong>Cloud Firestore</strong> &mdash; online data storage and sync (progress, scores, guilds, friends, chat, leaderboards, tournaments)</li>
+            <li><strong>Firebase Analytics</strong> &mdash; usage analytics</li>
+            <li><strong>Firebase Crashlytics</strong> &mdash; crash reporting</li>
+            <li><strong>Firebase Remote Config</strong> &mdash; app configuration and feature flags</li>
+            <li><strong>Firebase Cloud Messaging</strong> &mdash; optional push notifications</li>
+            <li><strong>Firebase App Check</strong> &mdash; app integrity verification</li>
+            <li><strong>Google Mobile Ads (AdMob)</strong> &mdash; advertisements shown only to players aged 13 and older. AdMob may collect advertising ID, IP address, and device information to serve ads.</li>
+            <li><strong>Google Play Services</strong> &mdash; Play Integrity and platform services</li>
+            <li><strong>Google Sign-In</strong> &mdash; account authentication</li>
+            <li><strong>Facebook Login (via Meta SDK)</strong> &mdash; account authentication</li>
         </ul>
         <p>Each third-party service has its own privacy policy governing the use of your data.</p>
 
-        <h2>5. Data Storage &amp; Security</h2>
-        <p>Your data is stored securely using Firebase Firestore and encrypted local storage. We implement industry-standard security measures to protect your information.</p>
+        <div class="note">The App does <strong>not</strong> contain in-app purchases or real-money payment features. Any in-game rewards, currency, ships, or upgrades are earned through gameplay.</div>
 
-        <h2>6. Data Retention</h2>
-        <p>We retain your information for as long as your account is active or as needed to provide the App's services. You may request deletion of your data by contacting us.</p>
-
-        <h2>7. Your Rights</h2>
-        <p>You have the right to:</p>
+        <h2>3. How We Use Your Information</h2>
         <ul>
-            <li>Access the personal information we hold about you</li>
-            <li>Request correction of inaccurate data</li>
-            <li>Request deletion of your personal data</li>
-            <li>Opt out of analytics collection</li>
+            <li>To provide, maintain, and improve the App</li>
+            <li>To sync game progress across devices</li>
+            <li>To display leaderboards and social features (guilds, friends, chat, tournaments)</li>
+            <li>To manage daily rewards, streaks, and progression systems</li>
+            <li>To serve advertisements to eligible players (aged 13 and older), in accordance with your consent choices</li>
+            <li>To send push notifications (with your permission)</li>
+            <li>To analyze usage and fix crashes</li>
+            <li>To comply with legal obligations</li>
         </ul>
 
+        <h2>4. Advertising and GDPR Consent</h2>
+        <p>The App uses Google Mobile Ads (AdMob) to display advertisements. We use a consent mechanism to obtain your consent for personalized advertising in compliance with GDPR (Europe) and similar privacy regulations.</p>
+        <p>You can manage your privacy choices at any time from the App's Settings screen under "Manage Privacy Choices". Resetting your choices will re-prompt the consent dialog.</p>
+
+        <h2>5. Data Storage and Security</h2>
+        <ul>
+            <li>Local data is stored securely on your device, protected by device encryption where available</li>
+            <li>Online data is stored on Firebase servers (Google Cloud Platform)</li>
+            <li>We implement reasonable security measures to protect your data</li>
+            <li>Firebase services encrypt data in transit and at rest</li>
+        </ul>
+
+        <h2>6. Data Sharing</h2>
+        <p>We do not sell your personal information. We may share data:</p>
+        <ul>
+            <li>With third-party service providers listed in Section 2.3</li>
+            <li>To comply with legal obligations</li>
+            <li>To protect our rights and safety</li>
+        </ul>
+
+        <h2>7. Your Rights</h2>
+        <p>Depending on your jurisdiction, you may have the right to:</p>
+        <ul>
+            <li>Access, update, or delete your personal data</li>
+            <li>Withdraw consent for data processing</li>
+            <li>Opt out of personalized advertising</li>
+            <li>Request data portability</li>
+            <li>Lodge a complaint with your local data protection authority</li>
+        </ul>
+        <p>You can delete your account and associated data directly in the App, or by following the steps on our <a href="https://muhamadjalal2.github.io/nova_rush_privacy_policy/delete-account.html">Delete Account</a> page.</p>
+
         <h2>8. Children's Privacy</h2>
-        <p>The App is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
+        <p>The App is intended for players aged 13 and older. We do not knowingly collect personal information from children under 13. Advertising is not shown to users we identify as under 13. If we learn that we have collected personal information from a child under 13 without parental consent, we will delete it.</p>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with an updated date.</p>
+        <h2>9. Data Retention</h2>
+        <p>We retain your data as long as your account is active or as needed to provide the service. You may delete your account at any time in the App. Analytics and crash data may be retained in aggregated, anonymized form.</p>
 
-        <h2>10. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, please contact us at: <a href="mailto:muhamadgalal4@gmail.com">muhamadgalal4@gmail.com</a></p>
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of changes by updating the "Last updated" date at the top.</p>
+
+        <h2>11. Revoking Consent</h2>
+        <p>You can revoke your consent for personalized advertising at any time:</p>
+        <ol>
+            <li>Open the App</li>
+            <li>Go to <strong>Settings &rarr; Privacy</strong></li>
+            <li>Tap <strong>"Manage Privacy Choices"</strong></li>
+            <li>Toggle off personalized ads or reset your consent</li>
+        </ol>
+        <p>You may also reset your advertising ID via your device settings (Android: Settings &rarr; Google &rarr; Ads &rarr; Reset advertising ID).</p>
+
+        <h2>12. Contact</h2>
+        <p>For questions about this Privacy Policy, contact:<br><a href="mailto:muhamadgalal4@gmail.com">muhamadgalal4@gmail.com</a></p>
     </div>
 </body>
 </html>
